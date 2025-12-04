@@ -9,8 +9,8 @@ n_workers: 25
 memory_limit_gb: 200
 
 # Scope
-ssps: ["SSP2", "SSP3", "SSP4", "SSP5"] # will look for mortality_SSP*.zarr, etc.
-# "SSP1" does not have all rcp values
+ssps: ["SSP2", "SSP3", "SSP4"] # will look for mortality_SSP*.zarr, etc.
+# "SSP1" and "SSP5" do not have all rcp values
 rcps: ["rcp45", "rcp85"]
 
 test_mode: false
