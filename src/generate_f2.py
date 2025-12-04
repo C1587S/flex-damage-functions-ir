@@ -61,7 +61,7 @@ def main():
 
     OUT_DIR = cfg["output_dir"]
     DB_PATH = os.path.join(OUT_DIR, "mortality_fe.duckdb")
-    MEANTAS_PATH = os.path.join(os.getcwd(), "meantas.csv")
+    MEANTAS_PATH = os.path.join(os.getcwd(), "climate/meantas.csv")
     F2_OUT = os.path.join(OUT_DIR, "f2_tables")
     os.makedirs(F2_OUT, exist_ok=True)
 

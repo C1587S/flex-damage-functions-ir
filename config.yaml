@@ -1,6 +1,6 @@
 # config.yaml
 
-zarr_base_dir: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/mortality/damages"
+zarr_base_dir: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/dataset/mortality/damages"
 output_dir: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/results/mortality"
 input_dir: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/results/mortality"
 
@@ -9,7 +9,8 @@ n_workers: 25
 memory_limit_gb: 200
 
 # Scope
-ssps: ["SSP1", "SSP2", "SSP3", "SSP4", "SSP5"] # will look for mortality_SSP3.zarr, etc.
+ssps: ["SSP2", "SSP3", "SSP4", "SSP5"] # will look for mortality_SSP*.zarr, etc.
+# "SSP1" does not have all rcp values
 rcps: ["rcp45", "rcp85"]
 
 test_mode: false
