@@ -3,8 +3,8 @@
 
 module load python
 source activate /project/cil/home_dirs/scadavidsanchez/envs/regional-scc
-
-for SSP in SSP3 SSP2 SSP4 SSP5 SSP1
+# SSP3 SSP2 SSP4 SSP5
+for SSP in  SSP1
 do
     echo "Processing SSP: $SSP"
 
@@ -13,7 +13,7 @@ do
         --cores 30 \
         --ssp $SSP \
         --basepath /project/cil/battuta-shares-S3-archive/gcp/outputs/mortality/impacts-darwin/montecarlo \
-        --output-dir /project/cil/home_dirs/scadavidsanchez/flexible-damage-funcs/dataset/mortality/damages
+        --output-dir /project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/dataset/mortality/damages
 
     echo "Completed SSP: $SSP"
     echo "--------------------------------------"

@@ -24,7 +24,7 @@ from tqdm import tqdm
 # Configuration
 # ====================================================================
 
-CLIMATE_CSV = "/project/cil/home_dirs/scadavidsanchez/flexdamages-ir/gcm_temp_gmst_year_preind1986-2005.csv"
+CLIMATE_CSV = "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/dataset/climate/gcm_temp_gmst_year_preind1986-2005.csv"
 SOCIO_ZARR  = "/project/cil/gcp/integration_replication/inputs/econ/raw/integration-econ-bc39.zarr"
 
 IAM_MAPPING = {"IIASA GDP": "low", "OECD Env-Growth": "high"}

@@ -1,15 +1,15 @@
 # config.yaml
 
-zarr_base_dir: "/project/cil/home_dirs/scadavidsanchez/flexible-damage-funcs/dataset/mortality/damages"
-output_dir: "./results_mortality_fe"
-input_dir: "./results_mortality_fe"
+zarr_base_dir: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/mortality/damages"
+output_dir: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/results/mortality"
+input_dir: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/results/mortality"
 
 # Processing resources
-n_workers: 20
-memory_limit_gb: 180
+n_workers: 25
+memory_limit_gb: 200
 
 # Scope
-ssps: ["SSP3"] # will look for mortality_SSP3.zarr, etc.
+ssps: ["SSP1", "SSP2", "SSP3", "SSP4", "SSP5"] # will look for mortality_SSP3.zarr, etc.
 rcps: ["rcp45", "rcp85"]
 
 test_mode: false
@@ -21,9 +21,9 @@ generate_plots: true
 # REGIONAL ESTIMATION CONFIG
 # =================================================================================
 
-output_dir: "./results_mortality_fe"
+output_dir: "./results/mortality"
 regions_per_job: 50      
 n_jobs_per_task: 8        
 n_parallel_jobs: 8 
 
-gamma_statistics_csv: "./results_mortality_fe/gamma_statistics.csv"
+gamma_statistics_csv: "/project/cil/home_dirs/scadavidsanchez/projects/flex-damage-functions-ir/results/mortality/gamma_statistics.csv"
